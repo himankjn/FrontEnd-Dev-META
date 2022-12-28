@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <title> Page Title </title>
+        <link rel="stylesheet" href="css/style.css">
+        <meta name="description" content="booking page">
+        <meta name="author" content="Himank Jain">
+    </head>
+    <body>
+        <header>
+            <!-- used for logo -->=
+        </header>
+
+        <nav>
+            <!-- used for navigation bar -->
+        </nav>
+
+        <main>
+            <h1> Book a Table</h1>
+            <form method="POST" action="/book_table">
+
+               
+                <fieldset id="location_pref">
+                    <input type="radio" value="indoors" name="location_pref" checked>Indoors
+                    <input type="radio" value="outdoors" name="location_pref">Outdoors
+                </fieldset> 
+                <div>
+                    <label for="booking_date">Booking Date: </label>
+                    <input type="date" id="booking_date" name="booking_date">
+                </div>
+                <div>
+                    <label for="pax">Number of Diners:</label>
+                    <input type="range" id="pax" name="pax" min="1" max="10" value="2" oninput="this.nextElementSibling.value = this.value">
+                    <output>2</output>
+                </div>
+                <div>
+                    <label for="booking_location">Location</label>
+                    <input id="booking_location" name="booking_location" list="locations">
+                    <datalist id="locations">
+                        <option value="Downtown Bangalore"></option>
+                        <option value="Indranagar"></option>
+                    </datalist>
+                </div>
+                <button type="submit">Book Table</button>
+            </form>
+            
+        </main>
+
+        <footer>
+            <!-- used for footer -->
+        </footer>
+        
+        <script src="js/script.js"></script>
+    </body>
+</html>
+
