@@ -1,0 +1,26 @@
+/* 
+.letter{
+    margin:5px;
+    background-color: darkblue;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+} */
+
+.letters{  
+    display: grid;
+    justify-content: center;
+    gap: 10px;
+    background-color: brown;
+    /* repeat(3, 100px) */
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 3fr 1fr
+}
+
+.letter{
+    margin:5px;
+    background-color: darkblue;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;;
+}

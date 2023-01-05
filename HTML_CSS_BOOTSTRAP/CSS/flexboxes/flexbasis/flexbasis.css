@@ -1,0 +1,34 @@
+
+.proportion{
+    display: flex;
+    align-items: stretch;
+}
+
+.proportion .label{
+}
+
+.proportion .container{
+    flex:1 0 auto;
+    display: flex;
+    align-items: stretch;
+    align-content: center;
+}
+
+.age{
+    justify-content: center;
+}
+
+.underage{
+    flex-basis: 15%;
+    background-color: orange;
+}
+
+.allowed{
+    flex-basis: 50%;
+    background-color: green;
+}
+
+.overage{
+    flex-basis:35%;
+    background-color: red
+}
