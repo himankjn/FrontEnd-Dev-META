@@ -1,0 +1,9 @@
+.rst-btn{
+    background-color: rgb(255, 123, 0);
+    color:white
+}
+
+.btn{
+    padding:0.4rem;
+    border-radius: 5px;
+}
